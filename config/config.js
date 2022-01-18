@@ -20,6 +20,6 @@ module.exports = {
         dialect: 'mysql',
     },
     production: {
-        use_env_variable: HEROKU_POSTGRESQL_PINK_URL,
+        use_env_variable: 'HEROKU_POSTGRESQL_PINK_URL',
     },
 };
