@@ -20,7 +20,11 @@ router.get('/:id', async (req, res) => {
             ]
         });
 
-        res.json({scores});
+        if (scores.length === 0) {
+            res.json('No scores found');
+        } else {
+            res.json(scores);
+        }
 });
 
 module.exports = router;
