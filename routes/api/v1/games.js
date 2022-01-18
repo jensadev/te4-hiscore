@@ -4,7 +4,11 @@ const { Game } = require('../../../models/');
 
 router.get('/', async (req, res) => {
     const games = await Game.findAll();
-    res.json({games});
+    if (games.length === 0) {
+        res.json('No games found');
+    } else {
+        res.json(games);
+    }
 });
 
 module.exports = router;
