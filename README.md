@@ -54,6 +54,22 @@ npx sequelize-cli seed:generate --name game
 npx sequelize-cli seed:generate --name score
 ```
 
+# TODO
+
+- REST routes (fix)
+    - POST /score/:gameId
+    - GET /score/:gameId
+    - GET /game/:gameId
+
+- Player ID? for tracking score across games
+- API key
+- Authentication
+- Documentation
+- Proper formated responses
+- Proper error handling
+# Tester
+
+Se https://github.com/jensnti/notes
 # Heroku
 
 Deploy
