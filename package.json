@@ -15,12 +15,12 @@
         "morgan": "~1.9.1",
         "pg": "^8.7.1",
         "pg-hstore": "^2.3.4",
-        "sequelize": "^6.13.0"
+        "sequelize": "^6.13.0",
+        "sequelize-cli": "^6.4.1"
     },
     "devDependencies": {
         "jest": "^27.4.7",
         "nodemon": "^2.0.15",
-        "sequelize-cli": "^6.4.1",
         "supertest": "^6.2.1"
     }
 }
