@@ -1,4 +1,19 @@
 # Anteckningar 
+
+## Docker
+
+Installera docker windows med WSL2 mys
+
+```bash
+docker pull postgres
+cd ~
+mkdir postgres-data
+docker run -d --name te4-postgres -e POSTGRES_PASSWORD=Pass2020! -v ${HOME}/postgres-data/:/var/lib/postgresql/data -p 5432:5432 postgres
+docker ps
+```
+
+## Express
+
 ```bash
 sudo npm i -g express express-generator
 
@@ -8,8 +23,8 @@ cd te4-hiscore
 express --no-view --git
 npm install
 
-npm i dotenv pg pg-hstore sequelize cors
-npm i --save-dev sequelize-cli nodemon jest supertest
+npm i dotenv pg pg-hstore sequelize sequelize-cli cors 
+npm i --save-dev nodemon jest supertest sqlite3
 
 npx sequelize init 
 npx sequelize-cli model:generate --name Game --attributes name:string,url:string
